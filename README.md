@@ -1,4 +1,4 @@
-# ✍️ Smart Grammar & Tone Rewriter
+# ✍️ rephrase-ai
 
 A beginner-friendly AI application built in Python that demonstrates **prompt engineering**, **structured outputs (JSON schema)**, and **interactive UI development** using the Google Gemini API.
 
@@ -7,7 +7,7 @@ A beginner-friendly AI application built in Python that demonstrates **prompt en
 ## 📁 Project Structure
 
 ```text
-smart-tone-rewriter/
+rephrase-ai/
 ├── app.py             # Streamlit interactive web frontend
 ├── rewriter.py        # Core AI logic & Pydantic structured output schema
 ├── requirements.txt   # Dependencies
@@ -19,14 +19,20 @@ smart-tone-rewriter/
 
 ## 🚀 Quickstart in VS Code
 
-### 1. Open the Project in VS Code
-Open VS Code and use `File > Open Folder...` to select:
-```text
-C:\Users\devel\.gemini\antigravity\scratch\smart-tone-rewriter
+### 1. Clone the Project
+Open a terminal and clone the repository:
+```bash
+git clone https://github.com/dkgodevops/rephrase-ai.git
+cd rephrase-ai
+```
+
+Then open the cloned folder in VS Code:
+```bash
+code .
 ```
 
 ### 2. Set Up a Virtual Environment
-Open the integrated terminal in VS Code (`Ctrl + ~` or ``Ctrl + ` ``) and run:
+In the VS Code integrated terminal (`Ctrl + ~` or ``Ctrl + ` ``), run:
 
 ```bash
 # Create virtual environment
@@ -34,6 +40,9 @@ python -m venv .venv
 
 # Activate it (Windows PowerShell)
 .venv\Scripts\Activate.ps1
+
+# Or activate it (macOS/Linux)
+source .venv/bin/activate
 
 # Install requirements
 pip install -r requirements.txt
